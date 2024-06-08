@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio</title>
+</head>
+<body>
+<header>
+    <nav>
+    <div class="left"> <i class="fas fa-user"></i> ABHI SREE KONDU</div>
+    <div class="right">
+        <ul>
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+        <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+    </div>
+    </nav>
+</header>
+<main>
+    <section class="firstsection">
+        <div class="leftsection">
+            <img src="./devimg.png" >
+        </div>
+        <div class="rightsection">
+            Hi! My name is <span class="purple"><span id="name"></span></span>
+            <div>and I am a passionate</div>
+            <span id="element"></span>
+           <div class="buttons">
+            <button class="btn"><a href="https://drive.google.com/file/d/1jERTzXRsPb7Fr6JjkFFwF8Cp1hoPFK42/view?usp=drivesdk" download="">Download Resume</a> </button>
+           <button class="btn" ><a href="https://github.com/abhisreekondu">Visit Github</a></button>
+           </div>
+        </div>
+    </section>
+    <hr>
+
+    <section class="secondsection">
+        <p class="heading">EDUCATION</p>
+            <div class="card">
+                <p class="text">Bachelor of Computer Science Engineering(Internet of Things)</p>
+                <p>VNR Vignana Jyothi Institute of Technology, 2022-2026</p>
+                <p>CGPA: 9.68</p>
+                
+            </div>
+            <div class="card">
+                <p class="text">Intermediate in MPC</p>
+                <p>Sri Chaitanya Junior college, 2020-2022</p>
+                <p>Percentage: 98.3%</p>
+            </div>
+            <div class="card">
+                <p class="text">SSC(10th Grade)</p>
+                <p>Sri Sai Vijetha High School, 2020</p>
+                <p>Percentage: 97.1%</p>
+            </div>
+    </section>
+    <hr>
+    <section class="thirdsection">
+        <p class="heading">SKILLS</p>
+        <p class="skillname">Programming Languages</p>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <h4>C++</h4>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <h4>Python</h4>
+                </div>
+            </div>
+
+            <p class="skillname">Web Development</p>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <h4>HTML</h4>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    <h4>CSS</h4>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js"></i>
+                    <h4>JavaScript</h4>
+                </div>
+            </div>
+
+            <p class="skillname">Databases</p>
+            <div class="skills-grid">
+                <div class="skill">
+                    <i class="fas fa-database"></i>
+                    <h4>SQL</h4>
+                </div>
+            </div>
+
+    </section>
+    <hr>
+    <section class="fourthsection">
+        <p class="heading">Contact</p>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i><strong> Email : </strong> <a href="https://mail.google.com/mail/u/0/#inbox">konduabhisree@gmail.com</a></p>
+            <p><i class="fab fa-linkedin"></i><strong> LinkedIn : </strong><a href="https://www.linkedin.com/in/kondu-abhi-sree">Abhi Sree Kondu (click here)</a></p>
+            <p><i class="fas fa-phone"></i><strong> Phone : </strong>xxx1234xx</p>
+            <p><i class="fas fa-map-marker-alt"></i><strong> Location : </strong> Hyderabad,Telangana</p>
+        </div>
+    </section>
+</main>
+
+<footer >
+    <p>© 2024 Abhi Sree Kondu. All rights reserved.</p>
+</footer>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#name', {
+      strings: ['Abhi Sree'],
+      typeSpeed: 50,
+    });
+  </script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['Software Developer.'],
+      typeSpeed: 50,
+    });
+  </script>
+  
+</body>
+</html>
