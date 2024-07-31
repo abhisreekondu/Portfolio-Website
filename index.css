@@ -1,149 +1,193 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,800&display=swap');
-
 
 html {
     scroll-behavior: smooth;
 }
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
-body{
-    background-color: rgba(0,0,33);
-    color:white;
+
+body {
+    background-color: rgba(0, 0, 33);
+    color: white;
     font-family: "Poppins", sans-serif;
 }
+
 nav {
-    display:flex;
+    display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 80px;
-    background-color:  rgba(81, 81, 95, 0.3);
-    width:100%;
-    top:0;
+    background-color: rgba(81, 81, 95, 0.3);
+    width: 100%;
+    top: 0;
+    padding: 0 10px;
+    position: relative;
 }
-nav ul{
-    display:flex;
-    justify-content: center;
-}
-nav ul li{
-   list-style: none;
-    padding: 15PX;
-    font-size: 1.2rem;
-}
-.left{
+
+nav .left {
     font-size: 2rem;
 }
-.firstsection{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 5vh 0;
-   
-}
-.leftsection{
-margin-top: 70px;
-width:30%;
 
-}
-.rightsection{
-   /* margin:85px 0; */
-    width:40%;
-    font-size:3rem;
-}
-.leftsection img{
-    width:95%;
-    height:130%;
+nav .right {
     display: flex;
-    
+    align-items: center;
 }
 
-.purple{
-    color:rgb(241, 137, 241);
-
+nav .right ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
 }
 
-nav ul li a {
-text-decoration: none;
-color: white;
+nav .right ul li {
+    list-style: none;
+    padding: 15px;
+    font-size: 1.2rem;
 }
 
-nav ul li a:hover{
-    color:rgb(108, 108, 239);
+nav .right ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .right ul li a:hover {
+    color: rgb(108, 108, 239);
     font-size: 1.1rem;
 }
 
-#element{
-    color:rgb(241, 137, 241);;
+nav .hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
+nav .hamburger i {
+    color: white;
+}
 
-.btn{
-    padding:12px;
-    
-    border:2px solid white;
+nav .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    background-color: rgba(81, 81, 95, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+nav .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav .mobile-menu ul li {
+    padding: 10px;
+}
+
+nav .mobile-menu ul li a {
+    font-size: 1.2rem;
+}
+
+.firstsection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 0;
+    padding: 0 10px;
+}
+
+.leftsection {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 70px;
+}
+
+.rightsection {
+    width: 100%;
+    max-width: 600px;
+    font-size: 2rem;
+}
+
+.leftsection img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.purple {
+    color: rgb(241, 137, 241);
+}
+
+#element {
+    color: rgb(241, 137, 241);
+}
+
+.btn {
+    padding: 12px;
+    border: 2px solid white;
     border-radius: 6px;
-    font-size: 20px;
-    cursor:pointer;
-    background-color: rgba(0,0,33);
-    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 33);
+    margin: 5px;
 }
 
-.btn a{
+.btn a {
     text-decoration: none;
-    color:rgb(241, 137, 241);
+    color: rgb(241, 137, 241);
 }
 
-.btn:hover{
-    background-color:rgb(32, 32, 112); 
+.btn:hover {
+    background-color: rgb(32, 32, 112);
 }
 
-main hr{
-    border:0;
-    background:rgb(168, 168, 228) ;
-    margin:40px 10px;
-    height:0.18rem;
+main hr {
+    border: 0;
+    background: rgb(168, 168, 228);
+    margin: 40px 10px;
+    height: 0.18rem;
     background: linear-gradient(to right, rgba(194, 194, 212, 0), rgba(247, 246, 248, 0.751), rgba(42, 42, 102, 0));
 }
 
-.secondsection .heading{
-    margin:5vh 20vh;
+.secondsection .heading {
+    margin: 5vh auto;
+    text-align: center;
 }
 
-.secondsection .text{
+.secondsection .text {
     font-size: 1.2rem;
-    color:purple;
+    color: purple;
 }
-
 
 .card {
-    margin:5vh 25vh;
-    /* border: 1px solid #557cbc9b; */
+    margin: 5vh auto;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 0px 4px rgb(230, 131, 245);
-   
+    max-width: 600px;
 }
 
 .card .text {
     margin-top: 0;
-    color:rgb(241, 137, 241);
-    font-size:1.2rem;
+    color: rgb(241, 137, 241);
+    font-size: 1.2rem;
 }
 
 .thirdsection {
-    margin:5vh 20vh;
+    margin: 5vh auto;
+    text-align: center;
 }
 
-
-.thirdsection .skillname{
-    margin:18px;
+.thirdsection .skillname {
+    margin: 18px;
     font-size: 1.5rem;
-    /* text-shadow:1px 0px 2px #e218f1; */
-    color:rgb(241, 137, 241);
+    color: rgb(241, 137, 241);
 }
 
 .skills-grid {
@@ -157,7 +201,7 @@ main hr{
     text-align: center;
     border-radius: 10px;
     padding: 20px;
-    box-shadow:  0 0px 4px rgb(230, 131, 245);
+    box-shadow: 0 0px 4px rgb(230, 131, 245);
 }
 
 .skill i {
@@ -170,37 +214,76 @@ main hr{
     font-size: 1.2rem;
 }
 
-.fourthsection{
-    margin:5vh 20vh;
-
+.fourthsection {
+    margin: 5vh auto;
+    text-align: center;
 }
 
-.fourthsection i{
+.fourthsection i {
     color: #1ac9e8;
 }
-.fourthsection p{
-    padding:8px;
+
+.fourthsection p {
+    padding: 8px;
 }
 
-
-.fourthsection a{
+.fourthsection a {
     text-decoration: none;
-    color:white;
-    
+    color: white;
 }
 
-footer{
-   height:70px;
-    background-color:  rgba(81, 81, 95, 0.3);
+footer {
+    height: 70px;
+    background-color: rgba(81, 81, 95, 0.3);
     margin-top: 20px;
-    padding-left: 20vh;
-    padding-top: 20px;
+    padding: 20px;
+    text-align: center;
 }
 
+@media (max-width: 768px) {
+    .firstsection {
+        flex-direction: column;
+        text-align: center;
+    }
 
-main .heading{
-  
-    font-size:3rem;
- 
-    
+    .leftsection, .rightsection {
+        width: 100%;
+        max-width: none;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    nav .right {
+        display: none;
+    }
+
+    nav .hamburger {
+        display: block;
+    }
+
+    nav .mobile-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .thirdsection .skillname {
+        font-size: 1.2rem;
+    }
+
+    .skill i {
+        font-size: 2.5rem;
+    }
+
+    .skill h4 {
+        font-size: 1rem;
+    }
 }
